@@ -46,48 +46,46 @@
         </nav>
     </header>
 
-<main class="d-flex justify-content-center align-items-start" style="margin-top:100px; margin-bottom:100px;">
-  <div class="container">
-    <div class="p-5 bg-dark text-white rounded-4 shadow">
+<main class="mt-5 pt-5">
+    <div class="container text-white">
+        <h1 class="text-center mb-5">Lathe</h1>
+        <div class="row align-items-center bg-dark p-4 rounded-4 shadow">
+            <div class="col-md-8">
+                <h3>What is a Lathe?</h3>
+                <p>A <strong>Lathe</strong> is a machine used to shape metal, wood, or plastic by rotating the material.</p>
 
-      <h1 class="text-center mb-4">Tools: Lathe</h1>
+                <h4>Examples:</h4>
+                <ul>
+                    <li>A lathe is used for <strong>shaping</strong> cylindrical parts. (used for + -ing)</li>
+                    <li>A lathe is used to <strong>cut</strong> and <strong>polish</strong> surfaces. (used to + verb)</li>
+                </ul>
 
-      <p>A lathe is a mechanical tool used in manufacturing to shape materials.</p>
+                <hr class="border-secondary">
 
-      <ul>
-        <li>It is <b>used for shaping</b> metal, wood, or plastic by rotating the material.</li>
-        <li>It is <b>used to cut</b>, sand, or polish cylindrical parts.</li>
-      </ul>
+                <h4 class="mt-4 mb-3">Mini Practice</h4>
 
-      <hr class="my-4">
+                <p>Write your own sentences:</p>
+                <label>Write a sentence using <strong>used for + -ing</strong>:</label>
+                <input type="text" class="form-control mb-3">
 
-      <h3>Mini Question</h3>
-      <p>A lathe is used ___ shape materials.</p>
+                <label>Write a sentence using <strong>used to + verb</strong>:</label>
+                <input type="text" class="form-control mb-3">
+            </div>
 
-      <select id="ql1">
-        <option value="">--Choose--</option>
-        <option value="for">for</option>
-        <option value="to">to</option>
-      </select>
+            <div class="col-md-4 text-center">
+                <img src="../imagenes/lathe.png" alt="Lathe" style="max-width:200px;" class="rounded-3 shadow">
+            </div>
+        </div>
 
-      <button class="btn btn-danger mt-3" onclick="checkL()">Check</button>
-      <div id="rl" class="mt-3 fs-4"></div>
-
-      <script>
-        function checkL(){
-          let score = 0;
-          if(document.getElementById("ql1").value === "for") score++;
-          document.getElementById("rl").innerHTML = "Score: " + score + "/1";
-        }
-      </script>
-
-      <a href="./index.html" class="btn btn-danger mt-4">Go Back</a>
-
+        <div class="text-center mt-4">
+            <a href="./index.html" class="btn btn-danger">Go Back</a>
+        </div>
     </div>
-  </div>
 </main>
+
 
 
     <script src="../css/bootstrap.js"></script>
 </body>
+
 </html>
