@@ -62,45 +62,41 @@
       </nav>
     
       </header> 
-<main class="d-flex justify-content-center align-items-start" style="margin-top:100px; margin-bottom:100px;">
-  <div class="container">
-    <div class="p-5 bg-dark text-white rounded-4 shadow">
+<main class="mt-5 pt-5">
+    <div class="container text-white">
+        <h1 class="text-center mb-5">3D Printer</h1>
+        <div class="row align-items-center bg-dark p-4 rounded-4 shadow">
+            <div class="col-md-8">
+                <h3>What is a 3D Printer?</h3>
+                <p>A <strong>3D Printer</strong> is a machine used to create three-dimensional objects from digital models.</p>
 
-      <h1 class="text-center mb-4">Tools: 3D Printer</h1>
+                <h4>Examples:</h4>
+                <ul>
+                    <li>A 3D printer is used for <strong>creating</strong> 3D objects. (used for + -ing)</li>
+                    <li>A 3D printer is used to <strong>print</strong> prototypes. (used to + verb)</li>
+                </ul>
 
-      <p>A 3D Printer is a machine used to create real physical objects from digital models.</p>
+                <hr class="border-secondary">
 
-      <ul>
-        <li>It is <b>used for creating</b> three-dimensional objects from digital designs.</li>
-        <li>It is <b>used to print</b> prototypes and parts in 3D.</li>
-      </ul>
+                <h4 class="mt-4 mb-3">Mini Practice</h4>
 
-      <hr class="my-4">
+                <p>Write your own sentences:</p>
+                <label>Write a sentence using <strong>used for + -ing</strong>:</label>
+                <input type="text" class="form-control mb-3">
 
-      <h3>Mini Question</h3>
-      <p>A 3D printer is used ___ print prototypes.</p>
+                <label>Write a sentence using <strong>used to + verb</strong>:</label>
+                <input type="text" class="form-control mb-3">
+            </div>
 
-      <select id="q3D1">
-        <option value="">--Choose--</option>
-        <option value="for">for</option>
-        <option value="to">to</option>
-      </select>
+            <div class="col-md-4 text-center">
+                <img src="../imagenes/3dprinter.png" alt="3D Printer" style="max-width:200px;" class="rounded-3 shadow">
+            </div>
+        </div>
 
-      <button class="btn btn-danger mt-3" onclick="check3D()">Check</button>
-      <div id="r3D" class="mt-3 fs-4"></div>
-
-      <script>
-        function check3D(){
-          let score = 0;
-          if(document.getElementById("q3D1").value === "to") score++;
-          document.getElementById("r3D").innerHTML = "Score: " + score + "/1";
-        }
-      </script>
-
-      <a href="./index.html" class="btn btn-danger mt-4">Go Back</a>
-
+        <div class="text-center mt-4">
+            <a href="./index.html" class="btn btn-danger">Go Back</a>
+        </div>
     </div>
-  </div>
 </main>
 
    
@@ -109,5 +105,6 @@
 
     <script src="../css/bootstrap.js"></script>
 </body>
+
 
 </html>
